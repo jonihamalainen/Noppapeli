@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sika-noppapeli</title>
+<link rel='stylesheet' href='noppapeli.css' type='text/css'/>
+<script type="text/javascript" src="noppapeli.js"></script>
+<body onload="allDisable()">
+<h1>MLG eSports Sika-noppapeli</h1>
+<h2>Paras 3:sta!</h2>
+<div class="noppapaikka"><img id="nopat" src="" width="400px" height="400px"/></div>
+
+
+<div id="pelaaja1round">Kierrospisteet: <div id="pelaaja1kierros">0</div></div>
+<div id="pelaaja1div">Kokonaispisteet: <div id="pelaaja1total">0</div></div>
+<button id="pelaaja1button" onclick="pelaaja1heitto()">Pelaaja 1 heittää!</button>
+<button id="lopetavuorosibutton1" onclick="buttonDisable1()">Lopeta vuorosi!</button>
+<div id="pelaaja1erävoitot">Erävoitot: <div id="pelaaja1erät">0</div></div>
+<div id="pelaaja1ilm"></div>
+<div id="pelaaja1voitto"></div>
+<div id="pelaaja1peli"></div>
+
+
+
+<div id="pelaaja2div">Kokonaispisteet: <div id="pelaaja2total">0</div></div>
+<div id="pelaaja2round">Kierrospisteet: <div id="pelaaja2kierros">0</div></div>
+<button id="pelaaja2button" onclick="pelaaja2heitto()">Pelaaja 2 heittää!</button>
+<button id="lopetavuorosibutton2" onclick="buttonDisable2()">Lopeta vuorosi!</button>
+<div id="pelaaja2erävoitot">Erävoitot: <div id="pelaaja2erät">0</div></div>
+<div id="pelaaja2ilm"></div>
+<div id="pelaaja2voitto"></div>
+<div id="pelaaja2peli"></div>
+
+
+<button id="pistemäärä" onclick="pistevalinta()">Pistemäärä</button>
+
+<nav id=pelaaja1jutut>
+  <ul>
+      <li>
+      <a href="#" style="text-decoration:none;">Pelaajan1 värit</a>
+      <ul class="fallback">
+        <li><a id=sininen1 href="#" style="text-decoration:none;" onclick="sininen1()">Sininen</a></li>
+        <li><a id=oranssi1 href="#" style="text-decoration:none;" onclick="oranssi1()">Oranssi</a></li>
+        <li><a id=violetti1 href="#" style="text-decoration:none;" onclick="violetti1()">Violetti</a></li>
+        <li><a id=kulta1 href="#" style="text-decoration:none;" onclick="kulta1()">Kulta</a></li>
+        <li><a id=vihreä1 href="#" style="text-decoration:none;" onclick="vihreä1()">Vihreä</a></li>
+  </ul>
+</li>
+
+</nav>
+
+<nav id=pelaaja2jutut>
+  <ul>
+      <li>
+        <a href="#" style="text-decoration:none;">Pelaajan2 värit</a>
+        <ul class="fallback">
+          <li><a id=sininen2 href="#" style="text-decoration:none;" onclick="sininen2()">Sininen</a></li>
+          <li><a id=oranssi2 href="#" style="text-decoration:none;" onclick="oranssi2()">Oranssi</a></li>
+          <li><a id=violetti2 href="#" style="text-decoration:none;" onclick="violetti2()">Violetti</a></li>
+          <li><a id=kulta2 href="#" style="text-decoration:none;" onclick="kulta2()">Kulta</a></li>
+          <li><a id=punainen2 href="#" style="text-decoration:none;" onclick="punainen2()">Punainen</a></li>
+  </ul>
+    </li>
+</nav>
+
+</body>
+</head>
+</html>
